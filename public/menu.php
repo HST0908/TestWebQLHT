@@ -9,13 +9,13 @@
                 echo '
                 <li id="home">
                     <i class="fa-solid fa-house"></i>
-                    <a href="quanly.php">Home</a>
+                    <a href="../admin/quanly.php">Home</a>
                 </li>';
             }else{
                 echo '
                 <li id="home">
                     <i class="fa-solid fa-house"></i>
-                    <a href="#">Home</a>
+                    <a href="./public/homepage.php">Home</a>
                 </li>';
             }
             

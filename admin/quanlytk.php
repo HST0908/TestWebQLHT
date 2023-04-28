@@ -38,7 +38,7 @@
                             $sql = "SELECT * FROM user";
                             $rs = mysqli_query($conn,$sql);
                             while($row = mysqli_fetch_assoc($rs)){
-                                echo '<tr>';
+                                echo '<tr class="table_body--title">';
                                     echo '<td>'.$row['username'].'</td>';
                                     echo '<td>'.$row['ten'].'</td>';
                                     if($row['role']=="1"){

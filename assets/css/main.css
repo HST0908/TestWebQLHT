@@ -304,26 +304,7 @@ html{
     }
 }
 
-@media (max-width: 1023px) {
-    .header__navbar--logo .logo_anh {
-        display: none;
-    }
 
-    .menu__header {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-    }
-
-    .header__navbar-list {
-        margin-left: 5px;
-    }
-
-    /* menu mobile */
-    .nav_menu-mobile {
-        display: block;
-    }
-}
 
 /* btn thêm */
 
@@ -361,12 +342,15 @@ html{
 
 .btnsua {
     display: inline-flex;
-    width: 80px;
     margin-left: 10px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    font-size: 1.2rem;
+    color: var(--text-color);
 }
 
 .btnsua:hover {
@@ -390,8 +374,8 @@ html{
     justify-content: center;
 }
 
-.hopchua {
-}
+/* .hopchua {
+} */
 
 .hopchua_title {
     display: flex;
@@ -419,18 +403,136 @@ html{
     border: none;
 }
 
-.btnsua {
-    width: 50%;
+.btnsua1 {
+    width: 75%;
     height: 40px;
-    margin: 45px 0 0 68px;
+    margin: 20% auto 0 auto;
     font-size: 1.2rem;
     color: var(--text-color);
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.btnsua1:hover {
+    background: #00b2ff;
+    color: var(--white-color);
+    transform: scale(5px);
 }
 
 .category_option {
-    border-radius: 5px;
+    border-radius: 15px;
     width: 165px;
     height: 40px;
     font-size: 1.1rem;
     outline: none;
+    font-weight: 600;
+}
+
+/* form nhập */
+
+.container {
+    width: 100%;
+    background: #222;
+    border-radius: 10px;
+}
+
+.container_header {
+    text-align: center;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.container_box{
+    display: flex;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.formNhap {
+    width: 100%;
+}
+
+.container_box-content {
+    display: flex;
+    margin: 0 7.5px 10px 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+.container_box-content-title {
+    width: 40%;
+    /* padding: 0 5px 10px 15px; */
+}
+
+.container_box-input {
+    width: 60%;
+}
+
+.category_optionNhap {
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+}
+
+.category_optionNhap option:nth-child(2n){
+    background: rgba(214, 214, 214, 0.7);
+}
+
+.content_input--item--input {
+    width: 65%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.btnNhap {
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    background: #00b2ff;
+    border: none;
+    cursor: pointer;
+}
+
+.btnNhap:hover {
+    color: #fff;
+    background: rgb(3, 189, 3);
+}
+
+@media (max-width: 1023px) {
+    .header__navbar--logo .logo_anh {
+        display: none;
+    }
+
+    .menu__header {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .header__navbar-list {
+        margin-left: 5px;
+    }
+
+    /* menu mobile */
+    .nav_menu-mobile {
+        display: block;
+    }
+
+    /* input nhap */
+    .content_input--item--input {
+        width: 100%;
+    }
 }

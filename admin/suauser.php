@@ -61,9 +61,33 @@
                                         echo'<option class="category_option--item" value="2">Đơn vị chủ trì</option>';
                                         echo'<option class="category_option--item" value="3" selected>Đơn vị phối hợp</option>';
                                         echo'</select>';}?>
-                                    <input type="submit" name="sua" class="btn btnsua" value="Sửa">
+                                    <input type="submit" name="sua" class="btn btnsua1" value="Sửa">
                                 </form>
-                                <?php } ?>
+                                <?php } 
+                                    if (isset($_POST['sua'])) {
+
+                                        $user = $_POST['taikhoan'];
+                                        $pass = $_POST['matkhau'];
+                                        $pass2 = $_POST['matkhau2'];
+                                        $role = $_POST['role'];
+
+                                        if ($user=="" || $pass=="" || $pass2=="") {
+                                            echo '<script>alert("nhập đầy đủ các trường!");</script>';
+                                        }
+                                         else {
+                                            if($pass == $pass2){
+                                                $sql = "UPDATE `user` SET `username` = '$user', `password` = MD5('$pass'), `role` = '$role' WHERE `user`.`id` = $id";
+                                                $result = mysqli_query($conn, $sql);
+                                                if ($result) {
+                                                    echo '<script>alert("Sửa thành công!");</script>';
+                                                    echo '<script>window.location.href = "quanlytk.php"</script>';
+                                                }
+                                            }else {
+                                                echo '<script>alert("mật khẩu không trùng khớp");</script>';
+                                            }
+                                        }
+                                    }
+                                ?>
                             </div>
                         </div>
                     </div>
