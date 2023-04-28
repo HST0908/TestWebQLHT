@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $dbname = "hethongquanly";
 $username = "root";
