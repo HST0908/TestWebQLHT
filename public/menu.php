@@ -15,7 +15,7 @@
                 echo '
                 <li id="home">
                     <i class="fa-solid fa-house"></i>
-                    <a href="./public/homepage.php">Home</a>
+                    <a href="../public/homepage.php">Home</a>
                 </li>';
             }
             

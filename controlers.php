@@ -5,5 +5,7 @@ function checkusers(){
     $ten = $user['ten'];
     if($role == '1'){
         header('location:./admin/quanly.php');
+    }else{
+        header('location:./public/homepage.php');
     }
 }

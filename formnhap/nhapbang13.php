@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <title>Quản lý</title>
+    <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
+    <title>Bảng 13</title>
 </head>
 <body>
 <?php 
@@ -29,79 +30,95 @@
                         <div class="container_box">
                             <form action="" method="post" class="formNhap">
                                 <div class="container_box-content">
-                                    <div class="content_title">
-                                        <ul>
-                                            <li class="content_title--item">Khoa/viện đào tạo</li>
-                                            <li class="content_title--item">Hệ</li>
-                                            <li class="content_title--item">Số CTĐT</li>
-                                            <li class="content_title--item">Số sinh viên</li>
-                                            <li class="content_title--item">Hệ</li>
-                                            <li class="content_title--item">Số CTĐT</li>
-                                            <li class="content_title--item">Số sinh viên</li>
-                                            <li class="content_title--item">Hệ</li>
-                                            <li class="content_title--item">Số CTĐT</li>
-                                            <li class="content_title--item">Số sinh viên</li>
-                                            <li class="content_title--item">Năm học</li>
-                                        </ul>
-                                    </div>
-                                    <div class="content_input">
-                                        <ul>
-                                            <li class="content_input--item">
-                                                <select class="category_option" name="khoa">
-                                                    <option class="category_option--item"value="Cơ khí động lực">Cơ khí động lực</option>
-                                                    <option class="category_option--item" value="Cơ khí chế tạo">Cơ khí chế tạo</option>
-                                                    <option class="category_option--item" value="Điện">Điện</option>
-                                                    <option class="category_option--item" value="Điện tử">Điện tử</option>
-                                                    <option class="category_option--item" value="Tin">Tin</option>
-                                                    <option class="category_option--item" value="Kinh tế">Kinh tế</option>
-                                                    <option class="category_option--item" value="Giáo dục đại cương">Giáo dục đại cương</option>
-                                                    <option class="category_option--item" value="Lý luận chính trị">Lý luận chính trị</option>
-                                                    <option class="category_option--item" value="Ngoại ngữ">Ngoại ngữ</option>
-                                                    <option class="category_option--item" value="Sư phạm">Sư phạm</option>
-                                                </select>
-                                            </li>
-                                            <li class="content_input--item">Đại học</li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="number" name="ctdtdaihoc" id="" required></li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="number" name="svdaihoc" id="" required></li>
-                                            <li class="content_input--item">Sau đại học</li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="number" name="ctdtsaudaihoc" id="" required></li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="number" name="svsaudaihoc" id="" required></li>
-                                            <li class="content_input--item">Khác</li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="number" name="ctdtkhac" id="" required></li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="number" name="svkhac" id="" required></li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="number" name="year" id="" required></li>
-                                        </ul>
+                                    <div class="container_box-content-title">Khoa/Viện đào tạo</div>
+                                    <div class="container_box-input">                                                
+                                        <select class="category_optionNhap" name="khoa">
+                                            <option class="category_option--item" value="Cơ khí động lực">Cơ khí động lực</option>
+                                            <option class="category_option--item" value="Cơ khí chế tạo">Cơ khí chế tạo</option>
+                                            <option class="category_option--item" value="Điện">Điện</option>
+                                            <option class="category_option--item" value="Điện tử">Điện tử</option>
+                                            <option class="category_option--item" value="Tin">Tin</option>
+                                            <option class="category_option--item" value="Kinh tế">Kinh tế</option>
+                                            <option class="category_option--item" value="Giáo dục đại cương">Giáo dục đại cương</option>
+                                            <option class="category_option--item" value="Lý luận chính trị">Lý luận chính trị</option>
+                                            <option class="category_option--item" value="Ngoại ngữ">Ngoại ngữ</option>
+                                            <option class="category_option--item" value="Sư phạm">Sư phạm</option>
+                                        </select>
                                     </div>
                                 </div>
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">Hệ Đại học</div>
+                                    <div class="container_box-input"></div>
+                                </div>
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">CTĐT</div>
+                                    <div class="container_box-input"><input class="content_input--item--input" min="0" type="number" name="ctdtdaihoc" placeholder="Chỉ nhập số" id="" required></div>
+                                </div>
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">Số Sinh viên</div>
+                                    <div class="container_box-input"><input class="content_input--item--input" min="0" type="number" name="svdaihoc" placeholder="Chỉ nhập số" id="" required></div>
+                                </div>
+                                <!-- tách -->
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">Hệ Sau đại học</div>
+                                    <div class="container_box-input"></div>
+                                </div>
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">CTĐT</div>
+                                    <div class="container_box-input"><input class="content_input--item--input" min="0" type="number" name="ctdtsaudaihoc" placeholder="Chỉ nhập số" id="" required></div>
+                                </div>
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">Số Sinh viên</div>
+                                    <div class="container_box-input"><input class="content_input--item--input" min="0" type="number" name="svsaudaihoc" placeholder="Chỉ nhập số" id="" required></div>
+                                </div>
+                                <!-- tách -->
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">Hệ Khác</div>
+                                    <div class="container_box-input"></div>
+                                </div>
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">CTĐT</div>
+                                    <div class="container_box-input"><input class="content_input--item--input" min="0" type="number" name="ctdtkhac" placeholder="Chỉ nhập số" id="" required></div>
+                                </div>
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">Số Sinh viên</div>
+                                    <div class="container_box-input"><input class="content_input--item--input" min="0" type="number" name="svkhac" placeholder="Chỉ nhập số" id="" required></div>
+                                </div>
+
+                                <div class="container_box-content">
+                                    <div class="container_box-content-title">Năm học</div>
+                                    <div class="container_box-input"><input class="content_input--item--input" min="2000" type="number" name="year" placeholder="2023" id="" required></div>
+                                </div>
+
                                 <input class="btnNhap" type="submit" value="Nhập" name="Nhap">
                             </form>
                             <?php
-                    if(isset($_POST['btnthem'])){
+                                if(isset($_POST['Nhap'])){
 
-                        $khoa = $_POST['khoa'];
-                        $ctdtdh = $_POST['ctdtdaihoc'];
-                        $svdh = $_POST['svdaihoc'];
-                        $ctdtsaudh = $_POST['ctdtsaudaihoc'];
-                        $svsaudh = $_POST['svsaudaihoc'];
-                        $ctdtkhac = $_POST['ctdtkhac'];
-                        $svkhac = $_POST['svkhac'];
-                        $year = $_POST['year'];
-                        $kn = mysqli_query($conn, "SELECT * FROM bang13 WHERE khoa = '$khoa' AND namhoc = '$year'");
+                                    $khoa = $_POST['khoa'];
+                                    $ctdtdh = $_POST['ctdtdaihoc'];
+                                    $svdh = $_POST['svdaihoc'];
+                                    $ctdtsaudh = $_POST['ctdtsaudaihoc'];
+                                    $svsaudh = $_POST['svsaudaihoc'];
+                                    $ctdtkhac = $_POST['ctdtkhac'];
+                                    $svkhac = $_POST['svkhac'];
+                                    $year = $_POST['year'];
+                                    $kn = mysqli_query($conn, "SELECT * FROM bang13 WHERE khoa = '$khoa' AND namhoc = '$year'");
 
-                        if($ctdtdh==""|| $svdh==""|| $ctdtsaudh==""|| $svsaudh==""|| $ctdtkhac==""||$svkhac==""){
-                            echo '<script>alert("nhập đầy đủ các trường!");</script>';
-                        }elseif(mysqli_num_rows($kn) > 0){
-                                echo '<script>alert("Dữ liệu của '.$khoa.' năm nay đã tồn tại!");</script>';
-                            } else {
-                            $sql = "INSERT INTO `bang13` (`id`, `khoa`, `ctdtdh`, `svdh`, `ctdtsaudh`, `svsaudh`, `ctdtkhac`, `svkhac`, `namhoc`) VALUES (NULL, '$khoa', '$ctdtdh', '$svdh', '$ctdtsaudh', '$svsaudh', '$ctdtkhac', '$svkhac', '$year')";
-                            $result = mysqli_query($conn, $sql);
-                            if($result){
-                                echo '<script>alert("Nhập thành công!");</script>';
-                                echo '<script>window.location.href = "../Danhmuc/bang13.php"</script>';
-                            }
-                        }
-                    }
-                    ?>
+                                    if($ctdtdh==""|| $svdh==""|| $ctdtsaudh==""|| $svsaudh==""|| $ctdtkhac==""||$svkhac==""){
+                                        echo '<script>alert("nhập đầy đủ các trường!");</script>';
+                                    }elseif(mysqli_num_rows($kn) > 0){
+                                            echo '<script>alert("Dữ liệu của '.$khoa.' năm '.$year.' đã tồn tại!");</script>';
+                                        } else {
+                                        $sql = "INSERT INTO `bang13` (`id`, `khoa`, `ctdtdh`, `svdh`, `ctdtsaudh`, `svsaudh`, `ctdtkhac`, `svkhac`, `namhoc`) VALUES (NULL, '$khoa', '$ctdtdh', '$svdh', '$ctdtsaudh', '$svsaudh', '$ctdtkhac', '$svkhac', '$year')";
+                                        $result = mysqli_query($conn, $sql);
+                                        if($result){
+                                            echo '<script>alert("Nhập thành công!");</script>';
+                                            // echo '<script>window.location.href = "../Danhmuc/bang13.php"</script>';
+                                        }
+                                    }
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -112,22 +129,3 @@
 <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
 <script src="../assets/js/app.js"></script>
 </html>
-
-<ul>
-                                            <li class="content_title--item">Các đơn vị (bộ phận)</li>
-                                            <li class="content_title--item">Họ và tên</li>
-                                            <li class="content_title--item">Chức danh, học vị, chức vụ</li>
-                                            <li class="content_title--item">Điện thoại</li>
-                                            <li class="content_title--item">E-mail</li>
-                                            <li class="content_title--item">Năm học</li>
-                                        </ul>
-                                    </div>
-                                    <div class="content_input">
-                                        <ul>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="text" name="txtdonvi" id="" required></li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="text" name="txtten" id="" required></li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="text" name="txtchucdanh" id="" required></li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="text" name="txtdienthoai" id="" required></li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="text" name="txtemail" id="" required></li>
-                                            <li class="content_input--item"><input class="content_input--item--input" type="text" name="year" id="" required></li>
-                                        </ul>

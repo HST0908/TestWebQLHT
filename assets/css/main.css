@@ -455,6 +455,7 @@ html{
 
 .container_box-content {
     display: flex;
+    align-items: center;
     margin: 0 7.5px 10px 15px;
 }
 

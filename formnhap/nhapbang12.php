@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
     <title>Quản lý</title>
 </head>
 <body>
