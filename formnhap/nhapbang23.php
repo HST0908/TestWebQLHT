@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>Bảng 23</title>
+    <title>KÝ TÚC XÁ CHO SINH VIÊN</title>
 </head>
 <body>
 <?php 

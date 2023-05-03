@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>Bảng 14</title>
+    <title>DANH SÁCH ĐƠN VỊ TRỰC THUỘC</title>
 </head>
 <body>
 <?php 

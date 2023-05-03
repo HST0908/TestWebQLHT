@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>Bảng 21</title>
+    <title>TỔNG SỐ NGƯỜI HỌC ĐĂNG KÝ DỰ THI VÀO CSGD, TRÚNG TUYỂN VÀ NHẬP HỌC TRONG 5 NĂM GẦN ĐÂY HỆ CHÍNH QUY</title>
 </head>
 <body>
 <?php 

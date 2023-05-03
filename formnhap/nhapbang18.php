@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>Bảng 18</title>
+    <title>THỐNG KÊ, PHÂN LOẠI GIẢNG VIÊN THEO TRÌNH ĐỘ</title>
 </head>
 <body>
 <?php 
@@ -26,7 +26,7 @@
             <div class="col l-10 m-12 c-12 app__content" >
                 <div class="row">
                     <div class="container">
-                        <div class="container_header"><h3 class="heading_title">THỐNG KÊ SỐ LƯỢNG CÁN BỘ, GIẢNG VIÊN VÀ NHÂN VIÊN </br>(GỌI CHUNG LÀ CÁN BỘ) CỦA CSGD THEO GIỚI TÍNH</h3></div>
+                        <div class="container_header"><h3 class="heading_title">THỐNG KÊ, PHÂN LOẠI GIẢNG VIÊN THEO TRÌNH ĐỘ</h3></div>
                         <div class="container_box">
                             <form action="" method="post" class="formNhap">
                                 <div class="container_box-content">

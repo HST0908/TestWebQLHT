@@ -441,6 +441,10 @@ html{
     color: var(--white-color);
     font-size: 1.5rem;
 }
+.heading_title {
+    padding: 0 0px;
+    margin: 0 5px;
+}
 
 .container_box{
     display: flex;
@@ -470,6 +474,7 @@ ul{
 
 .container_box-input {
     width: 60%;
+    padding-left: 15px;
 }
 
 .category_optionNhap {
@@ -479,8 +484,20 @@ ul{
     font-weight: 600;
     border: none;
 }
-
 .category_optionNhap option:nth-child(2n){
+    background: rgba(214, 214, 214, 0.7);
+}
+
+.category_optionNhap20 {
+    height: 40px;
+    width: 60%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+}
+
+.category_optionNhap20 option:nth-child(2n){
     background: rgba(214, 214, 214, 0.7);
 }
 

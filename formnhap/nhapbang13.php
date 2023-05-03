@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>Bảng 13</title>
+    <title>CÁC KHOA ĐÀO TẠO CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH</title>
 </head>
 <body>
 <?php 

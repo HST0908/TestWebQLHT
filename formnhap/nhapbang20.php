@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>Bảng 20</title>
+    <title> THỐNG KÊ, PHÂN LOẠI GIẢNG VIÊN CƠ HỮU</title>
 </head>
 <body>
 <?php 
@@ -26,13 +26,14 @@
             <div class="col l-10 m-12 c-12 app__content" >
                 <div class="row">
                     <div class="container">
-                        <div class="container_header"><h3 class="heading_title"> THỐNG KÊ, PHÂN LOẠI GIẢNG VIÊN CƠ HỮU THEO ĐỘ TUỔI </br> (SỐ NGƯỜI)</h3></div>
+                        <div class="container_header"><h3 class="heading_title">THỐNG KÊ, PHÂN LOẠI GIẢNG VIÊN CƠ HỮU 
+THEO MỨC ĐỘ THƯỜNG XUYÊN SỬ DỤNG NGOẠI NGỮ VÀ TIN HỌC CHO CÔNG TÁC GIẢNG DẠY VÀ NGHIÊN CỨU </h3></div>
                         <div class="container_box">
                             <form action="" method="post" class="formNhap">
                                 <div class="container_box-content">
                                     <div class="container_box-content-title">Tần suất sử dụng</div>
                                     <div class="container_box-input">
-                                        <select class="category_optionNhap" name="tansuatsd">
+                                        <select class="category_optionNhap20" name="tansuatsd">
                                             <option class="category_option--item" value="Luôn sử dụng">Luôn sử dụng (trên 80% thời gian của công việc)</option>
                                             <option class="category_option--item" value="Thường sử dụng">Thường sử dụng (trên 60-80% thời gian của công việc)</option>
                                             <option class="category_option--item" value="Đôi khi sử dụng">Đôi khi sử dụng (trên 40-60% thời gian của công việc)</option>

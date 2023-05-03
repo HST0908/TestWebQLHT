@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>Bảng 17</title>
+    <title>THỐNG KÊ SỐ LƯỢNG CÁN BỘ, GIẢNG VIÊN VÀ NHÂN VIÊN (GỌI CHUNG LÀ CÁN BỘ) CỦA CSGD THEO GIỚI TÍNH</title>
 </head>
 <body>
 <?php 

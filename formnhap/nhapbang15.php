@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>Bảng 15</title>
+    <title>THỐNG KÊ SỐ LƯỢNG GIẢNG VIÊN VÀ NGHIÊN CỨU VIÊN</title>
 </head>
 <body>
 <?php 
