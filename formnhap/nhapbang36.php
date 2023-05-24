@@ -53,12 +53,12 @@
                                 <!-- tách -->
                                 <div class="container_box-content">
                                     <div class="container_box-content-title">Số lượng cán bộ có báo cáo khoa học tại hội thảo trong nước</div>
-                                    <div class="container_box-input"><input class="content_input--item--input" type="text" name="slbcTN" placeholder="Chỉ nhập số" id="" required></div>
+                                    <div class="container_box-input"><input class="content_input--item--input" type="number" name="slbcTN" placeholder="Chỉ nhập số" id="" required></div>
                                 </div>
                                 <!-- tách -->
                                 <div class="container_box-content">
                                     <div class="container_box-content-title">Số lượng cán bộ có báo cáo khoa học tại hội thảo Trường</div>
-                                    <div class="container_box-input"><input class="content_input--item--input" type="text" name="slbcT" placeholder="Chỉ nhập số" id="" required></div>
+                                    <div class="container_box-input"><input class="content_input--item--input" type="number" name="slbcT" placeholder="Chỉ nhập số" id="" required></div>
                                 </div>
                                 <!-- tách -->
 
