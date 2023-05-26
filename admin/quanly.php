@@ -26,10 +26,10 @@
             <div class="col l-10 m-12 c-12 app__content" >
                 <div class="row">
                     <div class="col l-3 m-4 c-12">
-                        <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title">Danh sách cán bộ lãnh đạo chủ chốt</h4></a></div>
+                        <div class="category_item"><a href="../formxem/bang12.php" class="category_item--link"><h4 class="category_item--link-title">Danh sách cán bộ lãnh đạo chủ chốt</h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
-                        <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title">Các khoa đào tạo </h4></a></div>
+                        <div class="category_item"><a href="../formxem/bang13.php" class="category_item--link"><h4 class="category_item--link-title">Các khoa đào tạo </h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
                         <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title">Danh sách đơn vị thuộc và trực thuộc </h4></a></div>

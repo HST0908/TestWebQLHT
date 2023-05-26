@@ -65,3 +65,48 @@
 .table_body--title:nth-child(2n) {
     background-color: rgba(214, 214, 214, 0.7);
 }
+
+/* bảng xem */
+.bang_xem{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+    user-select: none;
+    color: var(--text-color);
+}
+
+.than_bang_xem{
+    display: block;
+}
+
+.than_bang_xem tr{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    word-break: break-word;
+}
+
+.than_bang_xem tr td {
+    width: 100%;
+    padding-left: 5px;
+}
+
+.bangxem--title:nth-child(2n){
+    background-color: rgba(214, 214, 214, 0.7);
+}
+
+.bangxem-header{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.bang_xem--nhieu tr:nth-child(2n){
+    background-color: rgba(214, 214, 214, 0.7);
+}
+
+.cot_bang_nhieu {
+    width: 11%;
+}

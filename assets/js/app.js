@@ -50,3 +50,6 @@ $(document).ready(function(){
     });
 });
 
+function thaydoi(){
+    document.getElementById("dulieuex").setAttribute("action", "");
+}
