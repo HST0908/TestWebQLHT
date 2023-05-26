@@ -51,11 +51,6 @@ html{
     display: none;
 }
 
-@media (min-width: 1023px) {
-    .header__navbar--logo .logo_ten {
-        font-size: 2rem;
-    }
-}
 
 .header__qt {
     display: flex;
@@ -603,6 +598,7 @@ ul{
 
 .input_nam-in{
     border: none;
+    width: 27%;
     border-radius: 10px;
     padding: 5px;
     font-size: 1.2rem;
@@ -655,5 +651,12 @@ ul{
     /* input nhap */
     .content_input--item--input {
         width: 100%;
+    }
+}
+
+
+@media (min-width: 1023px) {
+    .header__navbar--logo .logo_ten {
+        font-size: 2rem;
     }
 }

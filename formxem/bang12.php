@@ -28,8 +28,7 @@
                     <div class="container">
                         <div class="container_header"><h3 class="heading_title"> DANH SÁCH CÁN BỘ LÃNH ĐẠO CHỦ CHỐT CỦA CSGD</h3></div>
                         <div class="toolbar">
-                            <form name="dulieuex" id="dulieuex" action="../libs/exlbang12b.php" method="post" class="gia111">
-                            <input type="text" id="newAction" value="" hidden>
+                            <form name="dulieuex" id="dulieuex" action="../libs/exlbang12.php" method="post" class="gia111">
                                 <input type="number" id="input1" value="" class="input_nam-in" name="nambd" placeholder="Nhập năm bắt đầu" required>
                                 <input type="number" id="input2" value="" class="input_nam-in" name="namkt" placeholder="Nhập năm kết thúc" required>
                                 <button class="btn btn_ex" name="ex"><span class="text">Xuất Excel</span><span class="icon"><i class="fa-solid fa-file-export"></i></span></a>
@@ -66,7 +65,7 @@
                                             echo '<td>'.$row['dienthoai'].'</td>';
                                             echo '<td>'.$row['email'].'</td>';
                                             echo '<td>'.$row['namhoc'].'</td>';
-                                            echo '<td><label class="btnsua"><a href="suauser.php?id='.$row['id'].'">
+                                            echo '<td><label class="btnsua"><a href="../formxoa/xoabang12.php?id='.$row['id'].'">
                                             <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                     src="https://cdn.lordicon.com/nnbhwnej.json"
@@ -74,7 +73,7 @@
                                                     colors="primary:#eeca66"
                                                     style="width:35px;height:35px">
                                                 </lord-icon></a></label>
-                                                <label class="btnxoa"><a href="deleteuser.php?id='.$row['id'].'">
+                                                <label class="btnxoa"><a href="../formsua/suabang12.php?id='.$row['id'].'">
                                                 <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                 src="https://cdn.lordicon.com/exkbusmy.json"

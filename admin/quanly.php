@@ -32,25 +32,25 @@
                         <div class="category_item"><a href="../formxem/bang13.php" class="category_item--link"><h4 class="category_item--link-title">Các khoa đào tạo </h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
-                        <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title">Danh sách đơn vị thuộc và trực thuộc </h4></a></div>
+                        <div class="category_item"><a href="../formxem/bang14.php" class="category_item--link"><h4 class="category_item--link-title">Danh sách đơn vị trực thuộc (Bao gồm các trung tâm nghiên cứu, Chi nhánh/ các cơ sở đơn vị)</h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
-                        <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title" title="Thống kê số lượng giảng viên và nghiên cứu viên">Thống kê số lượng giảng viên và nghiên cứu viên</h4></a></div>
+                        <div class="category_item"><a href="../formxem/bang15.php" class="category_item--link"><h4 class="category_item--link-title" title="Thống kê số lượng giảng viên và nghiên cứu viên">Thống kê số lượng giảng viên và nghiên cứu viên</h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
-                        <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title">Thống kê số lượng cán bộ quản lý, nhân viên</h4></a></div>
+                        <div class="category_item"><a href="../formxem/bang16.php" class="category_item--link"><h4 class="category_item--link-title">Thống kê số lượng cán bộ quản lý, nhân viên</h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
-                        <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title" title="Thống kê số lượng cán bộ, giảng viên và nhân viên">Thống kê số lượng cán bộ, giảng viên và nhân viên </h4></a></div>
+                        <div class="category_item"><a href="../formxem/bang17.php" class="category_item--link"><h4 class="category_item--link-title" title="Thống kê số lượng cán bộ, giảng viên và nhân viên">Thống kê số lượng cán bộ, giảng viên và nhân viên </h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
-                        <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title">Thống kê, phân loại giảng viên theo trình độ</h4></a></div>
+                        <div class="category_item"><a href="../formxem/bang18.php" class="category_item--link"><h4 class="category_item--link-title">Thống kê, phân loại giảng viên theo trình độ</h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
-                        <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title">Danh sách cán bộ lãnh đạo chủ chốt</h4></a></div>
+                        <div class="category_item"><a href="../formxem/bang19.php" class="category_item--link"><h4 class="category_item--link-title">Danh sách cán bộ lãnh đạo chủ chốt</h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
-                        <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title">Danh sách cán bộ lãnh đạo chủ chốt</h4></a></div>
+                        <div class="category_item"><a href="../formxem/bang20.php" class="category_item--link"><h4 class="category_item--link-title">Danh sách cán bộ lãnh đạo chủ chốt</h4></a></div>
                     </div>
                     <div class="col l-3 m-4 c-12">
                         <div class="category_item"><a href="#" class="category_item--link"><h4 class="category_item--link-title">Danh sách cán bộ lãnh đạo chủ chốt Danh sách cán bộ lãnh đạo chủ chốt</h4></a></div>

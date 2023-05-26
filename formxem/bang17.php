@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>CÁC KHOA ĐÀO TẠO CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH</title>
+    <title>THỐNG KÊ SỐ LƯỢNG CÁN BỘ GIẢNG VIÊN VÀ NHÂN VIÊN CỦA CSGD THEO GIỚI TÍNH</title>
 </head>
 <body>
 <?php 
@@ -26,9 +26,9 @@
             <div class="col l-10 m-12 c-12 app__content" >
                 <div class="row">
                     <div class="container">
-                        <div class="container_header"><h3 class="heading_title"> CÁC KHOA ĐÀO TẠO CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH</h3></div>
+                        <div class="container_header"><h3 class="heading_title"> THỐNG KÊ SỐ LƯỢNG CÁN BỘ GIẢNG VIÊN VÀ NHÂN VIÊN CỦA CSGD THEO GIỚI TÍNH</h3></div>
                         <div class="toolbar">
-                            <form name="dulieuex" id="dulieuex" action="../libs/exlbang13.php" method="post" class="gia111">
+                            <form name="dulieuex" id="dulieuex" action="../libs/exlbang17.php" method="post" class="gia111">
                                 <input type="number" id="input1" value="" class="input_nam-in" name="nambd" placeholder="Nhập năm bắt đầu" required>
                                 <input type="number" id="input2" value="" class="input_nam-in" name="namkt" placeholder="Nhập năm kết thúc" required>
                                 <button class="btn btn_ex" name="ex"><span class="text">Xuất Excel</span><span class="icon"><i class="fa-solid fa-file-export"></i></span></a>
@@ -37,44 +37,38 @@
                         </div>
                         <div class="container_box">
                             <table class="bang_xem" border="0">
-                                <tbody class="bang_xem--nhieu">
-                                    <tr>
-                                        <th class="cot_bang_nhieu"  rowspan="2">Khoa viện đào tạo</th>
-                                        <th class="cot_bang_nhieu"  colspan="2">Đại học</th>
-                                        <th class="cot_bang_nhieu" colspan="2">Sau đại học</th>
-                                        <th class="cot_bang_nhieu" colspan="2">Khác(ghi rõ)</th>
-                                        <th class="cot_bang_nhieu" rowspan="2">Năm học</th>
-                                        <th class="cot_bang_nhieu" rowspan="2">Thao tác</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="cot_bang_nhieu">Số CTĐT</th>
-                                        <th class="cot_bang_nhieu">Số sinh viên</th>
-                                        <th class="cot_bang_nhieu">Số CTĐT</th>
-                                        <th class="cot_bang_nhieu">Số người học</th>
-                                        <th class="cot_bang_nhieu">Số CTĐT</th>
-                                        <th class="cot_bang_nhieu">Số người học</th>
+                                <tbody class="than_bang_xem">
+                                    <tr class="bangxem--title">
+                                        <td class="bangxem-header">Phân loại</td>
+                                        <td class="bangxem-header">Nam</td>
+                                        <td class="bangxem-header">Nữ</td>
+                                        <td class="bangxem-header">Tổng số</td>
+                                        <td class="bangxem-header">Năm học</td>
+                                        <td class="bangxem-header">Thao tác</td>
                                     </tr>
                                     <?php
                                     if(isset($_POST['xem'])){
                                         $nambd = $_POST['nambd'];
                                         $namkt = $_POST['namkt'];
-                                        $sql = "SELECT * FROM bang13 where namhoc between $nambd and $namkt ORDER BY namhoc DESC";
+                                        $sql = "SELECT * FROM bang17 where namhoc between $nambd and $namkt ORDER BY namhoc DESC";
                                     }else{
-                                        $sql = "SELECT * FROM bang13 order by namhoc desc";
+                                        $sql = "SELECT * FROM bang17 order by namhoc desc";
 
                                     }
                                     $rs = mysqli_query($conn,$sql);
                                     while($row = mysqli_fetch_assoc($rs)){
-                                        echo '<tr>';
-                                            echo '<td align="center">'.$row['khoa'].'</td>';
-                                            echo '<td  align="center">'.$row['ctdtdh'].'</td>';
-                                            echo '<td  align="center">'.$row['svdh'].'</td>';
-                                            echo '<td  align="center">'.$row['ctdtsaudh'].'</td>';
-                                            echo '<td  align="center">'.$row['svsaudh'].'</td>';
-                                            echo '<td  align="center">'.$row['ctdtkhac'].'</td>';
-                                            echo '<td  align="center">'.$row['svkhac'].'</td>';
-                                            echo '<td  align="center">'.$row['namhoc'].'</td>';
-                                            echo '<td  align="center"><label class="btnsua"><a href="../formsua/suabang13.php?id='.$row['id'].'">
+                                        $nam = $row['nam'];
+                                        $nu = $row['nu'];
+                                        $tong = $nam + $nu;
+                                        echo '<tr class="bangxem--title">';
+                                            if($row['phanloai']=='trong biên chế'){echo '<td>Cán bộ được tuyển dụng, sử dụng và quản lý theo các quy định của pháp luật về viên chức (trong biên chế)</td>';}
+                                            if($row['phanloai']=='hợp đồng dài hạn'){echo '<td>Cán bộ hợp đồng có thời hạn 3 năm và hợp đồng không xác định thời hạn (hợp đồng dài hạn)</td>';}
+                                            if($row['phanloai']=='hợp đồng ngắn hạn'){echo '<td>Cán bộ hợp đồng ngắn hạn, bao gồm cả giảng viên thỉnh giảng</td>';}
+                                            echo '<td>'.$row['nam'].'</td>';
+                                            echo '<td>'.$row['nu'].'</td>';
+                                            echo '<td>'.$tong.'</td>';
+                                            echo '<td>'.$row['namhoc'].'</td>';
+                                            echo '<td><label class="btnsua"><a href="../formxoa/xoabang17.php?id='.$row['id'].'">
                                             <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                     src="https://cdn.lordicon.com/nnbhwnej.json"
@@ -82,7 +76,7 @@
                                                     colors="primary:#eeca66"
                                                     style="width:35px;height:35px">
                                                 </lord-icon></a></label>
-                                                <label class="btnxoa"><a href="../formxoa/xoabang13.php?id='.$row['id'].'">
+                                                <label class="btnxoa"><a href="../formsua/suabang17.php?id='.$row['id'].'">
                                                 <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                 src="https://cdn.lordicon.com/exkbusmy.json"

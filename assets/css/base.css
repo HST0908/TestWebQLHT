@@ -94,7 +94,7 @@
     padding-left: 5px;
 }
 
-.bangxem--title:nth-child(2n){
+.bangxem--title:nth-child(2n - 1){
     background-color: rgba(214, 214, 214, 0.7);
 }
 
@@ -103,7 +103,7 @@
     font-weight: 600;
 }
 
-.bang_xem--nhieu tr:nth-child(2n){
+.bang_xem--nhieu tr:nth-child(2n - 1){
     background-color: rgba(214, 214, 214, 0.7);
 }
 
