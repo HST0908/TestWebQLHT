@@ -165,19 +165,19 @@
                                         echo '<script>alert("Dữ liệu của năm '.$year.' đã tồn tại!");</script>';
                                     }elseif($n1 !=""){
 
-                                    $sql ="INSERT INTO `bang26` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, 'Số lượng sinh viên tốt nghiệp (người)', '$n1', '$year'), 
-                                    (NULL, 'Tỷ lệ sinh viên tốt nghiệp so với số tuyển vào (%)', '$n2', '$year'),
-                                    (NULL, 'Tỷ lệ sinh viên trả lời đã học được những kiến thức và kỹ năng cần thiết cho công việc theo ngành tốt nghiệp (%)', '$n3', '$year'),
-                                    (NULL, 'Tỷ lệ sinh viên trả lời chỉ học được một phần kiến thức và kỹ năng cần thiết cho công việc theo ngành tốt nghiệp (%)', '$n4', '$year'),
-                                    (NULL, 'Tỷ lệ sinh viên trả lời KHÔNG học được những kiến thức và kỹ năng cần thiết cho công việc theo ngành tốt nghiệp', '$n5', '$year'), 
-                                    (NULL, 'Sau 6 tháng tốt nghiệp', '$n6', '$year'), 
-                                    (NULL, 'Sau 12 tháng tốt nghiệp', '$n7', '$year'),
-                                    (NULL, 'Tỷ lệ có việc làm trái ngành đào tạo (%)', '$n8', '$year'), 
-                                    (NULL, 'Tỷ lệ tự tạo được việc làm (%)', '$n9', '$year'), 
-                                    (NULL, 'Thu nhập bình quân/tháng của sinh viên có việc làm', '$n10', '$year'), 
-                                    (NULL, 'Tỷ lệ sinh viên đáp ứng yêu cầu của công việc, có thể sử dụng được ngay (%)', '$n11', '$year'),
-                                    (NULL, 'Tỷ lệ sinh viên cơ bản đáp ứng yêu cầu của công việc, nhưng phải đào tạo thêm (%)', '$n12', '$year'),
-                                    (NULL, 'Tỷ lệ sinh viên phải được đào tạo lại hoặc đào tạo bổ sung ít nhất 6 tháng (%)', '$n13', '$year')";
+                                    $sql ="INSERT INTO `bang26` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, '1 Số lượng sinh viên tốt nghiệp (người)', '$n1', '$year'), 
+                                    (NULL, '2 Tỷ lệ sinh viên tốt nghiệp so với số tuyển vào (%)', '$n2', '$year'),
+                                    (NULL, '3 Tỷ lệ sinh viên trả lời đã học được những kiến thức và kỹ năng cần thiết cho công việc theo ngành tốt nghiệp (%)', '$n3', '$year'),
+                                    (NULL, '4 Tỷ lệ sinh viên trả lời chỉ học được một phần kiến thức và kỹ năng cần thiết cho công việc theo ngành tốt nghiệp (%)', '$n4', '$year'),
+                                    (NULL, '5 Tỷ lệ sinh viên trả lời KHÔNG học được những kiến thức và kỹ năng cần thiết cho công việc theo ngành tốt nghiệp', '$n5', '$year'), 
+                                    (NULL, '6 Sau 6 tháng tốt nghiệp', '$n6', '$year'), 
+                                    (NULL, '7 Sau 12 tháng tốt nghiệp', '$n7', '$year'),
+                                    (NULL, '8 Tỷ lệ có việc làm trái ngành đào tạo (%)', '$n8', '$year'), 
+                                    (NULL, '9 Tỷ lệ tự tạo được việc làm (%)', '$n9', '$year'), 
+                                    (NULL, '10 Thu nhập bình quân/tháng của sinh viên có việc làm', '$n10', '$year'), 
+                                    (NULL, '11 Tỷ lệ sinh viên đáp ứng yêu cầu của công việc, có thể sử dụng được ngay (%)', '$n11', '$year'),
+                                    (NULL, '12 Tỷ lệ sinh viên cơ bản đáp ứng yêu cầu của công việc, nhưng phải đào tạo thêm (%)', '$n12', '$year'),
+                                    (NULL, '13 Tỷ lệ sinh viên phải được đào tạo lại hoặc đào tạo bổ sung ít nhất 6 tháng (%)', '$n13', '$year')";
                                     $result = mysqli_query($conn, $sql);
                                         if($result){
                                             echo '<script>alert("Nhập thành công!");</script>';

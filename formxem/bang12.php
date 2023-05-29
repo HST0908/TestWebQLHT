@@ -65,7 +65,7 @@
                                             echo '<td>'.$row['dienthoai'].'</td>';
                                             echo '<td>'.$row['email'].'</td>';
                                             echo '<td>'.$row['namhoc'].'</td>';
-                                            echo '<td><label class="btnsua"><a href="../formxoa/xoabang12.php?id='.$row['id'].'">
+                                            echo '<td><label class="btnsua"><a href="../formsua/suabang12.php?id='.$row['id'].'">
                                             <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                     src="https://cdn.lordicon.com/nnbhwnej.json"
@@ -73,7 +73,7 @@
                                                     colors="primary:#eeca66"
                                                     style="width:35px;height:35px">
                                                 </lord-icon></a></label>
-                                                <label class="btnxoa"><a href="../formsua/suabang12.php?id='.$row['id'].'">
+                                                <label class="btnxoa"><a href="../formxoa/xoabang12.php?id='.$row['id'].'">
                                                 <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                 src="https://cdn.lordicon.com/exkbusmy.json"

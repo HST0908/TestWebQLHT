@@ -120,35 +120,35 @@
                                             echo '<script>alert("nhập đầy đủ các trường!");</script>';
                                         }else{
                                             if($ncs !="") {
-                                                $sql ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, 'Nghiên cứu sinh bảo vệ thành công luận án tiến sĩ', '$ncs', '$year')";
+                                                $sql ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, '1 Nghiên cứu sinh bảo vệ thành công luận án tiến sĩ', '$ncs', '$year')";
                                                 $result = mysqli_query($conn, $sql);
                                             }
                                             if($hvcaohoc !="") {
-                                                $sql1 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, 'Học viên tốt nghiệp cao học', '$hvcaohoc', '$year')";
+                                                $sql1 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, '2 Học viên tốt nghiệp cao học', '$hvcaohoc', '$year')";
                                                 $result = mysqli_query($conn, $sql1);
                                             }
                                             if($svdhcq !="") {
-                                                $sql2 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, 'Sinh viên tốt nghiệp đại học chính quy', '$svdhcq', '$year')";
+                                                $sql2 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, '3 Sinh viên tốt nghiệp đại học chính quy', '$svdhcq', '$year')";
                                                 $result = mysqli_query($conn, $sql2);
                                             }
                                             if($svdhkcq !="") {
-                                                $sql3 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, 'Sinh viên tốt nghiệp đại học không chính quy', '$svdhkcq', '$year')";
+                                                $sql3 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, '4 Sinh viên tốt nghiệp đại học không chính quy', '$svdhkcq', '$year')";
                                                 $result = mysqli_query($conn, $sql3);
                                             }
                                             if($svcdcq !="") {
-                                                $sql4 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, 'Sinh viên tốt nghiệp cao đẳng chính quy', '$svcdcq', '$year')";
+                                                $sql4 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, '5 Sinh viên tốt nghiệp cao đẳng chính quy', '$svcdcq', '$year')";
                                                 $result = mysqli_query($conn, $sql4);
                                             }
                                             if($svcdkcq !="") {
-                                                $sql5 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, 'Sinh viên tốt nghiệp cao đẳng không chính quy', '$svcdkcq', '$year')";
+                                                $sql5 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, '6 Sinh viên tốt nghiệp cao đẳng không chính quy', '$svcdkcq', '$year')";
                                                 $result = mysqli_query($conn, $sql5);
                                             }
                                             if($tccq !="") {
-                                                $sql6 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, 'Học sinh tốt nghiệp trung cấp chính quy', '$tccq', '$year')";
+                                                $sql6 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, '7 Học sinh tốt nghiệp trung cấp chính quy', '$tccq', '$year')";
                                                 $result = mysqli_query($conn, $sql6);
                                             }
                                             if($tckcq !="") {
-                                                $sql7 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, 'Học sinh tốt nghiệp trung cấp không chính quy', '$tckcq', '$year')";
+                                                $sql7 ="INSERT INTO `bang25` (`id`, `tieuchi`, `soluong`, `namhoc`) VALUES (NULL, '8 Học sinh tốt nghiệp trung cấp không chính quy', '$tckcq', '$year')";
                                                 $result = mysqli_query($conn, $sql7);}
                                             if($result){
                                                 echo '<script>alert("Nhập thành công!");</script>';

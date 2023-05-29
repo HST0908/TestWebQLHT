@@ -33,7 +33,7 @@
         $i++;
     }
     $sql = $sql . " sum(if(namhoc=$i,giatri,0))as 'năm $i'";
-    $sql = $sql . " FROM bang26 where namhoc between $nambd and $namkt GROUP BY tieuchi";
+    $sql = $sql . " FROM bang26 where namhoc between $nambd and $namkt GROUP BY tieuchi ASC";
     $j = $nambd;
     $kq = mysqli_query($con, $sql);
     while ($row = mysqli_fetch_array($kq)) {

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 04, 2023 lúc 06:05 AM
+-- Thời gian đã tạo: Th5 28, 2023 lúc 10:43 AM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.2.4
 
@@ -223,7 +223,8 @@ CREATE TABLE `bang23` (
 
 CREATE TABLE `bang24` (
   `id` int(11) NOT NULL,
-  `soluong` int(11) NOT NULL,
+  `tieuchi` varchar(50) NOT NULL,
+  `giatri` float NOT NULL,
   `namhoc` year(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -446,7 +447,7 @@ CREATE TABLE `bang39` (
 CREATE TABLE `bang40` (
   `id` int(11) NOT NULL,
   `nam` year(4) NOT NULL,
-  `khoinghanh` varchar(30) NOT NULL,
+  `khoinganh` varchar(30) NOT NULL,
   `dausach` varchar(100) NOT NULL,
   `bansach` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -563,10 +564,8 @@ CREATE TABLE `bang48` (
 CREATE TABLE `bangmoi` (
   `Tieuchi` char(100) DEFAULT NULL,
   `Năm2022` char(4) DEFAULT NULL,
-  `Năm2023` char(4) DEFAULT NULL,
-  `Năm2024` char(4) DEFAULT NULL,
-  `Năm2025` char(4) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `Năm2023` char(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -602,10 +601,24 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `ten`, `password`, `role`) VALUES
 (1, 'admin', 'Admin', '21232f297a57a5a743894a0e4a801fc3', 1),
-(2, 'khoadien', 'Khoa điện', '202cb962ac59075b964b07152d234b70', 2),
-(3, 'phongdaotao', 'Phòng Đào Tạo', '202cb962ac59075b964b07152d234b70', 2),
-(4, 'phongtccb', 'Phòng Tổ chức cán bộ', '202cb962ac59075b964b07152d234b70', 2),
-(5, 'phongctsv', 'Phòng Công tác sinh viên', '202cb962ac59075b964b07152d234b70', 2);
+(2, 'khoadien', 'Khoa điện', '202cb962ac59075b964b07152d234b70', 3),
+(3, 'phongdaotao', 'Phòng Đào Tạo', '202cb962ac59075b964b07152d234b70', 3),
+(4, 'phongtccb', 'Phòng Tổ chức cán bộ', '202cb962ac59075b964b07152d234b70', 3),
+(5, 'phongctsv', 'Phòng Công tác sinh viên', '202cb962ac59075b964b07152d234b70', 3),
+(6, 'phongkhhtqt', 'Phòng KH-HTQT', '202cb962ac59075b964b07152d234b70', 3),
+(7, 'bpquanhedn', 'Bộ phận QHDN-VLSV', '202cb962ac59075b964b07152d234b70', 3),
+(8, 'phongqttb', 'Phòng QTTB', '202cb962ac59075b964b07152d234b70', 3),
+(9, 'thuvien', 'Thư viện', '202cb962ac59075b964b07152d234b70', 3),
+(10, 'phongkttc', 'Phòng KT-TC', '202cb962ac59075b964b07152d234b70', 3),
+(11, 'khoacntt', 'Khoa công nghệ thông tin', '202cb962ac59075b964b07152d234b70', 2),
+(12, 'khoackct', 'Khoa cơ khí chế tạo', '202cb962ac59075b964b07152d234b70', 2),
+(13, 'khoackdl', 'Khoa cơ khí động lực', '202cb962ac59075b964b07152d234b70', 2),
+(14, 'khoadt', 'Khoa điện tử', '202cb962ac59075b964b07152d234b70', 2),
+(15, 'khoakinhte', 'Khoa kinh tế', '202cb962ac59075b964b07152d234b70', 2),
+(16, 'khoagddc', 'Khoa giáo dục đại cương', '202cb962ac59075b964b07152d234b70', 2),
+(17, 'khoallct', 'Khoa lý luận chính trị', '202cb962ac59075b964b07152d234b70', 2),
+(18, 'khoangoaing', 'Khoa ngoại ngữ', '202cb962ac59075b964b07152d234b70', 2),
+(19, 'khoasp', 'Khoa sư phạm', '202cb962ac59075b964b07152d234b70', 2);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -1069,7 +1082,7 @@ ALTER TABLE `bang48`
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

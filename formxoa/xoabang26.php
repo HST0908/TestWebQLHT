@@ -3,4 +3,4 @@ include '../connect.php';
 $id = $_REQUEST['id'];
 $query = "DELETE FROM `bang26` WHERE id = $id";
 $result = mysqli_query($conn, $query);
-echo '<script>window.location.href = "../Danhmuc/bang26.php"</script>';
+echo '<script>window.location.href = "../formxem/bang26.php"</script>';

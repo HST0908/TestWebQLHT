@@ -69,7 +69,8 @@
                                     $slsv = $_POST['slsv'];
                                     $slsvkt = $_POST['slsvkt'];
                                     $slsvckt = $_POST['slsvckt'];
-                                    $year = $_POST['year'];;
+                                    $year = $_POST['year'];
+                                    $a = $dtphong/$slsvckt;
                                     $kn = mysqli_query($conn, "SELECT * FROM bang23 WHERE namhoc = '$year'");
 
                                     if(mysqli_num_rows($kn) > 0){
@@ -80,20 +81,23 @@
                                             echo '<script>alert("nhập đầy đủ các trường!");</script>';
                                         }else{
                                             if($dtphong !="") {
-                                                $sql ="INSERT INTO `bang23` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, 'Tổng diện tích phòng ở (m2)', '$dtphong', '$year')";
+                                                $sql ="INSERT INTO `bang23` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, '1 Tổng diện tích phòng ở (m2)', '$dtphong', '$year')";
                                                 $result = mysqli_query($conn, $sql);
                                             }
                                             if($slsv !="") {
-                                                $sql1 ="INSERT INTO `bang23` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, 'Số lượng sinh viên', '$slsv', '$year')";
+                                                $sql1 ="INSERT INTO `bang23` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, '2 Số lượng sinh viên', '$slsv', '$year')";
                                                 $result = mysqli_query($conn, $sql1);
                                             }
                                             if($slsvkt !="") {
-                                                $sql2 ="INSERT INTO `bang23` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, 'Số sinh viên có nhu cầu ở ký túc xá', '$slsvkt', '$year')";
+                                                $sql2 ="INSERT INTO `bang23` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, '3 Số sinh viên có nhu cầu ở ký túc xá', '$slsvkt', '$year')";
                                                 $result = mysqli_query($conn, $sql2);
                                             }
                                             if($slsvckt !="") {
-                                                $sql3 ="INSERT INTO `bang23` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, 'Số lượng sinh viên được ở ký túc xá', '$slsvckt', '$year')";
+                                                $sql3 ="INSERT INTO `bang23` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, '4 Số lượng sinh viên được ở ký túc xá', '$slsvckt', '$year')";
                                                 $result = mysqli_query($conn, $sql3);}
+                                            if($dtphong !="" and $slsvckt !="") {
+                                                $sql4 ="INSERT INTO `bang23` (`id`, `tieuchi`, `giatri`, `namhoc`) VALUES (NULL, '5 Tỷ số diện tích trên đầu sinh viên ở trong ký túc xá, m2/người', '$a', '$year')";
+                                                $result = mysqli_query($conn, $sql4);}
                                             if($result){
                                                 echo '<script>alert("Nhập thành công!");</script>';
                                                 echo '<script>window.location.href = "../public/homepage.php"</script>';

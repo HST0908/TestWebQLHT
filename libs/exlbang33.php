@@ -61,7 +61,7 @@
 	if(mysqli_num_rows($rsout) > 0){
 		$output.='<table border="1">
 		<tr>
-		<td> Thành tích </td>';
+		<td>Phân loại tạp chí</td>';
 		for($k = $nambd;$k<=$namkt;$k++){
 			$output = $output.='<td>'.$k.'</td>';
 		}

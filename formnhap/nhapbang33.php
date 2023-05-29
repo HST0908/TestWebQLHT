@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>SỐ LƯỢNG BÀI CỦA CÁC CÁN BỘ CƠ HỮU CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH ĐƯỢC ĐĂNG TẠP CHÍ</title>
+    <title>SỐ LƯỢNG BÀI CỦA CÁC CÁN BỘ CƠ HỮU CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH ĐƯỢC ĐĂNG TẠP CHÍ TRONG 5 NĂM GẦN ĐÂY</title>
 </head>
 <body>
 <?php 
@@ -26,7 +26,7 @@
             <div class="col l-10 m-12 c-12 app__content" >
                 <div class="row">
                     <div class="container">
-                        <div class="container_header"><h3 class="heading_title">SỐ LƯỢNG BÀI CỦA CÁC CÁN BỘ CƠ HỮU CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH ĐƯỢC ĐĂNG TẠP CHÍ</h3></div>
+                        <div class="container_header"><h3 class="heading_title">SỐ LƯỢNG BÀI CỦA CÁC CÁN BỘ CƠ HỮU CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH ĐƯỢC ĐĂNG TẠP CHÍ TRONG 5 NĂM GẦN ĐÂY</h3></div>
                         <div class="container_box">
                             <form action="" method="post" class="formNhap">
 

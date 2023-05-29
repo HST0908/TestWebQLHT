@@ -24,22 +24,36 @@ $user = (isset($_SESSION['user']))?$_SESSION['user']:'';
                         <i class="fa-regular fa-circle-xmark"></i>
                     </label>
                     <ul class="nav_menu-mobile--list">
+                        <?php 
+                    if($user['ten'] == "Admin"){
+                        echo '
                         <li id="home1" class="nav_menu-mobile--list__active">
                             <i class="fa-solid fa-house"></i>
-                            <a href="#">Home</a>
+                            <a href="../admin/quanly.php">Home</a>
                         </li>
+                        
+                        <li id="quanly1">
+                            <i class="fa-sharp fa-solid fa-gears"></i>
+                            <a href="../admin/quanlytk.php">Quản lý tài khoản</a>
+                        </li>';
+                    }else{
+                        echo'
+                        <li id="home1" class="nav_menu-mobile--list__active">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="../public/homepage.php">Home</a>
+                        </li>
+                        ';
+                    }
+                        echo'
                         <li id="quanly">
                         <i class="fa-solid fa-key"></i>
                         <a href="#">Đổi mật khẩu</a> 
                         </li>
-                        <li id="quanly1">
-                            <i class="fa-sharp fa-solid fa-gears"></i>
-                            <a href="#">Quản lý tài khoản</a>
-                        </li>
                         <li id="thoat1">
                             <i class="fa-solid fa-right-from-bracket"></i>
-                            <a href="../logout.php">Thoát</a>
-                        </li>
+                            <a href="../logout.php">Đăng xuất</a>
+                        </li>';
+                        ?>
                     </ul>
                 </div>
             </div>

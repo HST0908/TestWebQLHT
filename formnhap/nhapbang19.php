@@ -26,7 +26,7 @@
             <div class="col l-10 m-12 c-12 app__content" >
                 <div class="row">
                     <div class="container">
-                        <div class="container_header"><h3 class="heading_title"> THỐNG KÊ, PHÂN LOẠI GIẢNG VIÊN CƠ HỮU THEO ĐỘ TUỔI </br> (SỐ NGƯỜI)</h3></div>
+                        <div class="container_header"><h3 class="heading_title">THỐNG KÊ, PHÂN LOẠI GIẢNG VIÊN CƠ HỮU THEO ĐỘ TUỔI (SỐ NGƯỜI)</h3></div>
                         <div class="container_box">
                             <form action="" method="post" class="formNhap">
                                 <div class="container_box-content">

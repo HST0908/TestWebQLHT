@@ -9,12 +9,12 @@ $rs = mysqli_query($con,$sql);
 if(mysqli_num_rows($rs) > 0){
 
     $output.='<table border = "1">
-                <tr>
-                <td>Năm</td>
-                <td>Doanh thu từ NCKH và chuyển giao công nghệ (triệu VNĐ)</td>
-                <td>Tỷ lệ doanh thu từ NCKH và chuyển giao công nghệ so với tổng kinh phí đầu vào của CSGD (%)</td>
-                <td>Tỷ số doanh thu từ NCKH và chuyển giao công nghệ trên cán bộ cơ hữu (triệu VNĐ/ người)</td>
-                </tr>';
+        <tr>
+        <td>Năm</td>
+        <td>Doanh thu từ NCKH và chuyển giao công nghệ (triệu VNĐ)</td>
+        <td>Tỷ lệ doanh thu từ NCKH và chuyển giao công nghệ so với tổng kinh phí đầu vào của CSGD (%)</td>
+        <td>Tỷ số doanh thu từ NCKH và chuyển giao công nghệ trên cán bộ cơ hữu (triệu VNĐ/ người)</td>
+        </tr>';
     while($row = mysqli_fetch_assoc($rs)){
         $output.='<tr>
         <td>'.$row['nam'].'</td>

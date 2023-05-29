@@ -18,7 +18,7 @@
     // $namkt = 2024;
     $sql1 = "drop table bangmoi";
     $kq1 = mysqli_query($con, $sql1);
-    $sql2 = "create table bangmoi(Phanloai varchar (1000))";
+    $sql2 = "create table bangmoi(Tieuchi varchar (1000))";
     $kq2 = mysqli_query($con, $sql2);
     for ($j = $nambd; $j <= $namkt; $j++) {
         $nam = "Năm" . $j;
@@ -26,14 +26,14 @@
         $kq3 = mysqli_query($con, $sql3);
     }
 
-    $sql = "select phanloaidetai,";
+    $sql = "select tieuchi,";
     $i = $nambd;
     while ($i < $namkt) {
-        $sql = $sql . " sum(if(namhoc=$i,soluong,0)) as 'năm $i',";
+        $sql = $sql . " sum(if(namhoc=$i,giatri,0)) as 'năm $i',";
         $i++;
     }
-    $sql = $sql . " sum(if(namhoc=$i,soluong,0))as 'năm $i'";
-    $sql = $sql . " FROM bang28 where namhoc between $nambd and $namkt GROUP BY phanloaidetai";
+    $sql = $sql . " sum(if(namhoc=$i,giatri,0))as 'năm $i'";
+    $sql = $sql . " FROM bang27 where namhoc between $nambd and $namkt GROUP BY tieuchi";
     $j = $nambd;
     $kq = mysqli_query($con, $sql);
     while ($row = mysqli_fetch_array($kq)) {
@@ -51,7 +51,7 @@
         for ($j = $nambd; $j <= $namkt; $j++) {
             $tam1 = $row[$i];
             $nam = "Năm" . $j;
-            $sql2 = "update bangmoi set $nam=$tam1 where Phanloai = '$tam'";
+            $sql2 = "update bangmoi set $nam=$tam1 where Tieuchi = '$tam'";
             $kq2 = mysqli_query($con, $sql2);
             $i++;
         }
@@ -60,11 +60,11 @@
 	$sqlout = "Select * from bangmoi ";
 	$rsout = mysqli_query($con,$sqlout);
 	if(mysqli_num_rows($rsout) > 0){
-		$output.='<table>
+		$output.='<table border=1>
 		<tr>
-		<td><h4> Phân loại đề tài</h4></td>';
+		<td><h4> Tiêu chí</h4></td>';
 		for($k = $nambd;$k<=$namkt;$k++){
-			$output = $output.='<td><h4>'.$k.'</h4></td>';
+			$output = $output.='<th>'.$k.'</th>';
 		}
 		$output = $output.='</tr>';
 
@@ -79,7 +79,7 @@
 		$output.='</table>';
 	}
     header('Content-Type:application/xls');
-    header('Content-Disposition:attachment;filename= bang28.xls');
+    header('Content-Disposition:attachment;filename= bang27.xls');
     echo $output;
     ?>
 </body>

@@ -60,10 +60,9 @@
 	$rsout = mysqli_query($con,$sqlout);
 	if(mysqli_num_rows($rsout) > 0){
 		$output.='
-        <h5> SỐ LƯỢNG CÁN BỘ CƠ HỮU CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH THAM GIA VIẾT SÁCH </h5>
         <table border="1">
 		<tr>
-		<td> Thành tích </td>';
+		<td>Phân loại sách</td>';
 		for($k = $nambd;$k<=$namkt;$k++){
 			$output = $output.='<td>'.$k.'</td>';
 		}
