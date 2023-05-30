@@ -9,25 +9,23 @@ $output = "";
 $output = '<table border = 1>
     <tr>
         <th rowspan="2">Năm</th>
-        <th rowspan="2">Số lượng sách</th>
-        <th colspan="4">Số lượng cán bộ cơ hữu tham gia viết sách</th>
+        <th rowspan="2">Số lượng cán bộ cơ hữu có bài báo đăng trên tạp chí</th>
+        <th colspan="3">Nơi đăng</th>
     </tr>
     <tr>
-        <th>Sách chuyên khảo</th>
-        <th>Sách giáo khoa</th>
-        <th>Sách tham khảo</th>
-        <th>Sách hướng dẫn</th>
+        <th>Tạp chí khoa học Quốc tế</th>
+        <th>Tạp chí khoa học cấp Nghành trong nước</th>
+        <th>Tạp chí / tập san cấp trường</th>
     </tr>';
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)){
             $output.='
             <tr>
-           <td align="center">'.$row['nam'].'</td>
-           <td  align="center">'.$row['slsach'].'</td>
-           <td  align="center">'.$row['slvietSCK'].'</td>
-           <td  align="center">'.$row['slvietSGK'].'</td>
-           <td  align="center">'.$row['slvietSTK'].'</td>
-           <td  align="center">'.$row['slvietSHD'].'</td>
+                <td align="center">'.$row['nam'].'</td>
+                <td align="center">'.$row['slbaibao'].'</td>
+                <td align="center">'.$row['sltcQT'].'</td>
+                <td align="center">'.$row['sltcTN'].'</td>
+                <td align="center">'.$row['sltcT'].'</td>
             </tr>
             ';
         }
@@ -35,5 +33,5 @@ $output = '<table border = 1>
 $output .='</table>';
 
 header('Content-Type:application/xls');
-header('Content-Disposition:attachment;filename= bang32.xls');
+header('Content-Disposition:attachment;filename= bang34.xls');
 echo $output;

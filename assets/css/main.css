@@ -346,6 +346,15 @@ html{
     color: var(--text-color);
 }
 
+.btnsua a {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.btnxoa a {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
 .btnsua:hover {
     background: #00b2ff;
 }

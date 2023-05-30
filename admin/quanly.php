@@ -97,6 +97,45 @@
                     <div class="col l-3 m-4 c-12">
                         <div class="category_item"><a href="../formxem/bang35.php" class="category_item--link"><h4 class="category_item--link-title" title="Số lượng bài báo khoa học do cán bộ cơ hữu của trường đại học Sư Phạm Kỹ Thuật Vinh báo cáo tại các hội nghị, hội thảo được đăng toàn văn trong tuyển tập công trình hay kỉ yếu trong 5 năm gần đây">Số lượng bài báo khoa học do cán bộ cơ hữu của trường đại học Sư Phạm Kỹ Thuật Vinh báo cáo tại các hội nghị, hội thảo được đăng toàn văn trong tuyển tập công trình hay kỉ yếu trong 5 năm gần đây</h4></a></div>
                     </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang36.php" class="category_item--link"><h4 class="category_item--link-title" title="Số lượng cán bộ cơ hữu của trường đại học Sư Phạm Kỹ Thuật Vinh có báo cáo khoa học tại các hội nghị, hội thảo được đăng toàn văn trong tuyển tập công trình hay kỉ yếu trong 5 năm gần đây">Số lượng cán bộ cơ hữu của trường đại học Sư Phạm Kỹ Thuật Vinh có báo cáo khoa học tại các hội nghị, hội thảo được đăng toàn văn trong tuyển tập công trình hay kỉ yếu trong 5 năm gần đây</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang37.php" class="category_item--link"><h4 class="category_item--link-title" title="Số bằng phát minh, sáng chế được cấp trong 5 năm gần đây">Số bằng phát minh, sáng chế được cấp trong 5 năm gần đây</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang38.php" class="category_item--link"><h4 class="category_item--link-title" title="Nghiên cứu khoa học của sinh viên">Nghiên cứu khoa học của sinh viên</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang39.php" class="category_item--link"><h4 class="category_item--link-title" title="Diện tích đất, diện tích sàn xây dựng">Diện tích đất, diện tích sàn xây dựng</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang40.php" class="category_item--link"><h4 class="category_item--link-title" title="Tổng số đầu sách trong thư viện của nhà trường">Tổng số đầu sách trong thư viện của nhà trường</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang41.php" class="category_item--link"><h4 class="category_item--link-title" title="Tổng số thiết bị chính của trường">Tổng số thiết bị chính của trường</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang42.php" class="category_item--link"><h4 class="category_item--link-title" title="Tổng kinh phí từ các nguồn thu của trường trong 5 năm gần đây">Tổng kinh phí từ các nguồn thu của trường trong 5 năm gần đây</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang43.php" class="category_item--link"><h4 class="category_item--link-title" title="Tổng thu học phí (Chỉ tính hệ chính quy) trong 5 năm gần đây">Tổng thu học phí (Chỉ tính hệ chính quy) trong 5 năm gần đây</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang44.php" class="category_item--link"><h4 class="category_item--link-title" title="Tổng chi cho hoạt động nghiên cứu khoa học, chuyển giao công nghệ và phục vụ cộng đồng">Tổng chi cho hoạt động nghiên cứu khoa học, chuyển giao công nghệ và phục vụ cộng đồng</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang45.php" class="category_item--link"><h4 class="category_item--link-title" title="Tổng thu từ hoạt động nghiên cứu khoa học, chuyển giao công nghệ và phục vụ cộng đồng">Tổng thu từ hoạt động nghiên cứu khoa học, chuyển giao công nghệ và phục vụ cộng đồng</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang46.php" class="category_item--link"><h4 class="category_item--link-title" title="Tổng chi cho hoạt động đào tạo">Tổng chi cho hoạt động đào tạo</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang47.php" class="category_item--link"><h4 class="category_item--link-title" title="Tổng chi cho phát triển đội ngũ">Tổng chi cho phát triển đội ngũ</h4></a></div>
+                    </div>
+                    <div class="col l-3 m-4 c-12">
+                        <div class="category_item"><a href="../formxem/bang48.php" class="category_item--link"><h4 class="category_item--link-title" title="Tổng chi cho hoạt động kết nối doanh nghiệp, tư vấn và hỗ trợ việc làm">Tổng chi cho hoạt động kết nối doanh nghiệp, tư vấn và hỗ trợ việc làm</h4></a></div>
+                    </div>
                 </div>
             </div>
 

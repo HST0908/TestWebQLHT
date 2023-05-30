@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/base.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <LINK REL="SHORTCUT ICON"  HREF="../assets/img/logo.jpg">
-    <title>SỐ LƯỢNG CÁN BỘ CƠ HỮU CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH THAM GIA VIẾT BÀI ĐĂNG TẠP CHÍ TRONG 5 NĂM GẦN ĐÂY</title>
+    <title>SỐ BẰNG PHÁT MINH, SÁNG CHẾ ĐƯỢC CẤP ĐƯỢC CẤP TRONG 5 NĂM GẦN ĐÂY</title>
 </head>
 <body>
 <?php 
@@ -26,9 +26,9 @@
             <div class="col l-10 m-12 c-12 app__content" >
                 <div class="row">
                     <div class="container">
-                        <div class="container_header"><h3 class="heading_title"> SỐ LƯỢNG CÁN BỘ CƠ HỮU CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH THAM GIA VIẾT BÀI ĐĂNG TẠP CHÍ TRONG 5 NĂM GẦN ĐÂY</h3></div>
+                        <div class="container_header"><h3 class="heading_title">SỐ BẰNG PHÁT MINH, SÁNG CHẾ ĐƯỢC CẤP ĐƯỢC CẤP TRONG 5 NĂM GẦN ĐÂY</h3></div>
                         <div class="toolbar">
-                            <form name="dulieuex" id="dulieuex" action="../libs/exlbang34.php" method="post" class="gia111">
+                            <form name="dulieuex" id="dulieuex" action="../libs/exlbang37.php" method="post" class="gia111">
                                 <input type="number" id="input1" value="" class="input_nam-in" name="nambd" placeholder="Nhập năm bắt đầu" required>
                                 <input type="number" id="input2" value="" class="input_nam-in" name="namkt" placeholder="Nhập năm kết thúc" required>
                                 <button class="btn btn_ex" name="ex"><span class="text">Xuất Excel</span><span class="icon"><i class="fa-solid fa-file-export"></i></span></a>
@@ -37,36 +37,33 @@
                         </div>
                         <div class="container_box">
                             <table class="bang_xem" border="0">
-                                <tbody class="bang_xem--nhieu">
-                                    <tr>
-                                        <th class="cot_bang_nhieu" rowspan="2">Năm</th>
-                                        <th class="cot_bang_nhieu" rowspan="2">Số lượng cán bộ cơ hữu có bài báo đăng trên tạp chí</th>
-                                        <th class="cot_bang_nhieu" colspan="3">Nơi đăng</th>
-                                        <th class="cot_bang_nhieu" rowspan="2">Thao tác</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="cot_bang_nhieu">Tạp chí khoa học Quốc tế</th>
-                                        <th class="cot_bang_nhieu">Tạp chí khoa học cấp Nghành trong nước</th>
-                                        <th class="cot_bang_nhieu">Tạp chí / tập san cấp trường</th>
+                                <tbody class="than_bang_xem">
+                                    <tr class="bangxem--title">
+                                        <td class="bangxem-header">STT</td>
+                                        <td class="bangxem-header">Năm</td>
+                                        <td class="bangxem-header">Số bằng phát minh, sáng chế được cấp (ghi rõ nơi cấp, thời gian cấp, người được cấp)</td>
+                                        <td class="bangxem-header">Thao tác</td>
                                     </tr>
                                     <?php
+                                    include '../function.php';
                                     if(isset($_POST['xem'])){
                                         $nambd = $_POST['nambd'];
                                         $namkt = $_POST['namkt'];
-                                        $sql = "SELECT * FROM bang34 where nam between $nambd and $namkt ORDER BY nam DESC";
+                                        $sql = "SELECT * FROM bang37 where nam between $nambd and $namkt ORDER BY nam DESC";
                                     }else{
-                                        $sql = "SELECT * FROM bang34 order by nam desc";
+                                        $sql = "SELECT * FROM bang37 order by nam desc";
 
                                     }
                                     $rs = mysqli_query($conn,$sql);
+                                    $i = 0;
                                     while($row = mysqli_fetch_assoc($rs)){
-                                        echo '<tr>';
-                                            echo '<td align="center">'.$row['nam'].'</td>';
-                                            echo '<td  align="center">'.$row['slbaibao'].'</td>';
-                                            echo '<td  align="center">'.$row['sltcQT'].'</td>';
-                                            echo '<td  align="center">'.$row['sltcTN'].'</td>';
-                                            echo '<td  align="center">'.$row['sltcT'].'</td>';
-                                            echo '<td  align="center"><label class="btnsua"><a href="../formsua/suabang34.php?id='.$row['id'].'">
+                                        $tg = $row['thoigiancap'];
+                                        $date=date_create("$tg");
+                                        echo '<tr class="bangxem--title">';
+                                        echo '<td>'.$i++.'</td>';
+                                            echo '<td>'.$row['nam'].'</td>';
+                                            echo '<td>'.'Số bằng phát minh: <strong>'.$row['slbang'].'</strong></br>Nơi cấp: <strong>'.$row['noicap'].'</strong></br>Thời gian cấp: <strong>'.date_format($date,"d/m/Y").'</strong></br>Người được cấp: <strong>'.$row['nguoiduoccap'].'</strong></td>';
+                                            echo '<td><label class="btnsua"><a href="../formsua/suabang37.php?id='.$row['id'].'">
                                             <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                     src="https://cdn.lordicon.com/nnbhwnej.json"
@@ -74,7 +71,7 @@
                                                     colors="primary:#eeca66"
                                                     style="width:35px;height:35px">
                                                 </lord-icon></a></label>
-                                                <label class="btnxoa"><a href="../formxoa/xoabang34.php?id='.$row['id'].'">
+                                                <label class="btnxoa"><a href="../formxoa/xoabang37.php?id='.$row['id'].'">
                                                 <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                 src="https://cdn.lordicon.com/exkbusmy.json"

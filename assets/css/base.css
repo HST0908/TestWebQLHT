@@ -110,3 +110,10 @@
 .cot_bang_nhieu {
     width: 11%;
 }
+
+.anbot td:nth-child(2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}

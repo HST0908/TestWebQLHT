@@ -60,14 +60,11 @@
 	$rsout = mysqli_query($con,$sqlout);
 	if(mysqli_num_rows($rsout) > 0){
 		$output.='
-        <h5> SỐ LƯỢNG BÁO CÁO KHOA HỌC DO CÁN BỘ CƠ HỮU
-        CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH BÁO CÁO TẠI CÁC HỘI NGHỊ, HỘI THẢO, 
-        ĐƯỢC ĐĂNG TOÀN VĂN TRONG TUYỂN TẬP CÔNG TRÌNH HAY KỶ YẾU</h5>
         <table border="1">
 		<tr>
-		<td> Thành tích </td>';
+		<td><strong>Loại hội thảo</strong></td>';
 		for($k = $nambd;$k<=$namkt;$k++){
-			$output = $output.='<td>'.$k.'</td>';
+			$output = $output.='<td><strong>'.$k.'</strong></td>';
 		}
 		$output = $output.='</tr>';
 
