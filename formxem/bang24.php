@@ -50,13 +50,13 @@
 
                                                 $r1 = mysqli_fetch_array(mysqli_query($conn, "select namhoc, sum(soluong) from bang28 group by namhoc having namhoc=$j"));
 
-                                                $kq3 = mysqli_query($conn, "insert into bang24 values('Tổng số Học viên',$r1[0],$r1[1])");
+                                                $kq3 = mysqli_query($conn, "insert into bang24 values(null,'Tổng số Học viên',$r1[1],$r1[0])");
                                                 $r2 = mysqli_fetch_array(mysqli_query($conn, "select nam, sum(soluong) from bang38 group by nam having nam=$j"));
 
-                                                $kq13 = mysqli_query($conn, "insert into bang24 values('Tổng số NCKH',$r2[0],$r2[1])");
+                                                $kq13 = mysqli_query($conn, "insert into bang24 values(null,'Tổng số NCKH',$r2[1],$r2[0])");
 
                                                 $tl = round(($r2[1] / $r1[1]), 5);
-                                                mysqli_query($conn, "insert into bang24 values('Tỉ lệ',$j,$tl)");
+                                                mysqli_query($conn, "insert into bang24 values(null,'Tỉ lệ',$tl,$j)");
                                             }
                                             $j++;
                                         }
@@ -111,13 +111,13 @@
 
                                                 $r1 = mysqli_fetch_array(mysqli_query($conn, "select namhoc, sum(soluong) from bang28 group by namhoc having namhoc=$j"));
 
-                                                $kq3 = mysqli_query($conn, "insert into bang24 values('Tổng số Học viên',$r1[0],$r1[1])");
+                                                $kq3 = mysqli_query($conn, "insert into bang24 values(null,'Tổng số Học viên',$r1[1],$r1[0])");
                                                 $r2 = mysqli_fetch_array(mysqli_query($conn, "select nam, sum(soluong) from bang38 group by nam having nam=$j"));
 
-                                                $kq13 = mysqli_query($conn, "insert into bang24 values('Tổng số NCKH',$r2[0],$r2[1])");
+                                                $kq13 = mysqli_query($conn, "insert into bang24 values(null,'Tổng số NCKH',$r2[1],$r2[0])");
 
                                                 $tl = round(($r2[1] / $r1[1]), 5);
-                                                mysqli_query($conn, "insert into bang24 values('Tỉ lệ',$j,$tl)");
+                                                mysqli_query($conn, "insert into bang24 values(null,'Tỉ lệ',$tl,$j)");
                                             }
                                             $j++;
                                         }

@@ -31,7 +31,9 @@
                             <form name="dulieuex" id="dulieuex" action="../libs/exlbang13.php" method="post" class="gia111">
                                 <input type="number" id="input1" value="" class="input_nam-in" name="nambd" placeholder="Nhập năm bắt đầu" required>
                                 <input type="number" id="input2" value="" class="input_nam-in" name="namkt" placeholder="Nhập năm kết thúc" required>
+                                <?php if($user['role'] == 1){?>
                                 <button class="btn btn_ex" name="ex"><span class="text">Xuất Excel</span><span class="icon"><i class="fa-solid fa-file-export"></i></span></a>
+                                <?php } ?>
                                 <button class="btn btn_xem" name="xem" id="xem" onclick="thaydoi()">xem</button>
                             </form>
                         </div>
@@ -44,7 +46,9 @@
                                         <th class="cot_bang_nhieu" colspan="2">Sau đại học</th>
                                         <th class="cot_bang_nhieu" colspan="2">Khác(ghi rõ)</th>
                                         <th class="cot_bang_nhieu" rowspan="2">Năm học</th>
+                                        <?php if($user['role'] == 1){?>
                                         <th class="cot_bang_nhieu" rowspan="2">Thao tác</th>
+                                        <?php } ?>
                                     </tr>
                                     <tr>
                                         <th class="cot_bang_nhieu">Số CTĐT</th>
@@ -74,6 +78,7 @@
                                             echo '<td  align="center">'.$row['ctdtkhac'].'</td>';
                                             echo '<td  align="center">'.$row['svkhac'].'</td>';
                                             echo '<td  align="center">'.$row['namhoc'].'</td>';
+                                            if($user['role'] == 1){
                                             echo '<td  align="center"><label class="btnsua"><a href="../formsua/suabang13.php?id='.$row['id'].'">
                                             <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
@@ -91,7 +96,7 @@
                                                 style="width:35px;height:35px">
                                             </lord-icon></label>
                                             </a>
-                                            </td>';
+                                            </td>';}
                                             echo '</tr>';
                                         }
                                     ?>

@@ -31,7 +31,9 @@
                             <form name="dulieuex" id="dulieuex" action="../libs/exlbang44.php" method="post" class="gia111">
                                 <input type="number" id="input1" value="" class="input_nam-in" name="nambd" placeholder="Nhập năm bắt đầu" required>
                                 <input type="number" id="input2" value="" class="input_nam-in" name="namkt" placeholder="Nhập năm kết thúc" required>
+                                <?php if($user['role'] == 1){ ?>
                                 <button class="btn btn_ex" name="ex"><span class="text">Xuất Excel</span><span class="icon"><i class="fa-solid fa-file-export"></i></span></a>
+                                <?php } ?>
                                 <button class="btn btn_xem" name="xem" id="xem" onclick="thaydoi()">xem</button>
                             </form>
                         </div>
@@ -42,7 +44,9 @@
                                         <td class="bangxem-header">STT</td>
                                         <td class="bangxem-header">Năm</td>
                                         <td class="bangxem-header">Tổng chi</td>
+                                        <?php if($user['role'] == 1){ ?>
                                         <td class="bangxem-header">Thao tác</td>
+                                        <?php } ?>
                                     </tr>
                                     <?php
                                     include '../function.php';
@@ -61,6 +65,7 @@
                                             echo '<td>'.$i++.'</td>';
                                             echo '<td>'.$row['nam'].'</td>';
                                             echo '<td>'.number_format($row['chiNCKH'], 0, '.','.').'</td>';
+                                            if($user['role'] == 1){
                                             echo '<td><label class="btnsua"><a href="../formsua/suabang44.php?id='.$row['id'].'">
                                             <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
@@ -78,7 +83,7 @@
                                                 style="width:35px;height:35px">
                                             </lord-icon></label>
                                             </a>
-                                            </td>';
+                                            </td>';}
                                         echo '</tr>';
                                         }
                                     ?>

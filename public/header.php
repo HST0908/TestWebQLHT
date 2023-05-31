@@ -47,7 +47,7 @@ $user = (isset($_SESSION['user']))?$_SESSION['user']:'';
                         echo'
                         <li id="quanly">
                         <i class="fa-solid fa-key"></i>
-                        <a href="#">Đổi mật khẩu</a> 
+                        <a href="../public/doimk.php">Đổi mật khẩu</a> 
                         </li>
                         <li id="thoat1">
                             <i class="fa-solid fa-right-from-bracket"></i>

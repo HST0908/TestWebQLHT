@@ -22,7 +22,7 @@
             echo '
                 <li id="matkhau">
                 <i class="fa-solid fa-key"></i>
-                <a href="#">Đổi mật khẩu</a> 
+                <a href="../public/doimk.php">Đổi mật khẩu</a> 
                 </li>';
             
             if($user['role'] == "1"){
