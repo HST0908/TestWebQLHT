@@ -56,10 +56,10 @@
                                     <div class="container_box-input"><input class="content_input--item--input" min="2000" type="number" name="year" placeholder="2023" id="" required></div>
                                 </div>
 
-                                <input class="btnNhap" type="submit" value="Nhập" name="Nhap">
+                                <input class="btnNhap" type="submit" value="Sửa" name="sua">
                             </form>
                             <?php
-                                if(isset($_POST['Nhap'])){
+                                if(isset($_POST['sua'])){
 
                                     $dtch = $_POST['dtch'];
                                     $dtdh = $_POST['dtdh'];

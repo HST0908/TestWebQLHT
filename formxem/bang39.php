@@ -68,7 +68,7 @@
                                             echo '<td align="center">'.$row['sohuu'].'</td>';
                                             echo '<td align="center">'.$row['lienket'].'</td>';
                                             echo '<td align="center">'.$row['thue'].'</td>';
-                                            echo '<td align="center"><label class="btnsua"><a href="../formsua/suabang39.php?id='.$row['id'].'">
+                                            echo '<td align="center"><label class="btnsua"><a href="../formsua/suabang39.php?nam='.$row['nam'].'">
                                             <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                     src="https://cdn.lordicon.com/nnbhwnej.json"

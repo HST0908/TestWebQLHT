@@ -43,12 +43,12 @@ CỦA TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT VINH BÁO CÁO TẠI CÁC 
                                 <!-- tách -->
                                 <div class="container_box-content">
                                     <div class="container_box-content-title">Hội thảo trong nước</div>
-                                    <div class="container_box-input"><input class="content_input--item--input" type="text" name="hoithaoTN" placeholder="Chỉ nhập số" id="" required></div>
+                                    <div class="container_box-input"><input class="content_input--item--input" type="number" name="hoithaoTN" placeholder="Chỉ nhập số" id="" required></div>
                                 </div>
                                 <!-- tách -->
                                 <div class="container_box-content">
                                     <div class="container_box-content-title">Hội thảo của trường</div>
-                                    <div class="container_box-input"><input class="content_input--item--input" type="text" name="hoithaoT" placeholder="Chỉ nhập số" id="" required></div>
+                                    <div class="container_box-input"><input class="content_input--item--input" type="number" name="hoithaoT" placeholder="Chỉ nhập số" id="" required></div>
                                 </div>
                                 <!-- tách -->
                                 <div class="container_box-content">

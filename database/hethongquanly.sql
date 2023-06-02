@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 28, 2023 lúc 10:43 AM
+-- Thời gian đã tạo: Th6 02, 2023 lúc 04:38 PM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.2.4
 
@@ -480,7 +480,7 @@ CREATE TABLE `bang41` (
 CREATE TABLE `bang42` (
   `id` int(11) NOT NULL,
   `nam` year(4) NOT NULL,
-  `tongnguonthu` int(11) NOT NULL
+  `tongnguonthu` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -492,7 +492,7 @@ CREATE TABLE `bang42` (
 CREATE TABLE `bang43` (
   `id` int(11) NOT NULL,
   `nam` year(4) NOT NULL,
-  `tongthuhocphi` int(11) NOT NULL
+  `tongthuhocphi` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -504,7 +504,7 @@ CREATE TABLE `bang43` (
 CREATE TABLE `bang44` (
   `id` int(11) NOT NULL,
   `nam` year(4) NOT NULL,
-  `chiNCKH` int(11) NOT NULL
+  `chiNCKH` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -516,7 +516,7 @@ CREATE TABLE `bang44` (
 CREATE TABLE `bang45` (
   `id` int(11) NOT NULL,
   `nam` year(4) NOT NULL,
-  `thuNCKH` int(11) NOT NULL
+  `thuNCKH` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -528,7 +528,7 @@ CREATE TABLE `bang45` (
 CREATE TABLE `bang46` (
   `id` int(11) NOT NULL,
   `nam` year(4) NOT NULL,
-  `chiHDDT` int(11) NOT NULL
+  `chiHDDT` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -540,7 +540,7 @@ CREATE TABLE `bang46` (
 CREATE TABLE `bang47` (
   `id` int(11) NOT NULL,
   `nam` year(4) NOT NULL,
-  `chiPTdoingu` int(11) NOT NULL
+  `chiPTdoingu` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -552,7 +552,7 @@ CREATE TABLE `bang47` (
 CREATE TABLE `bang48` (
   `id` int(11) NOT NULL,
   `nam` year(4) NOT NULL,
-  `chiKNdoanhnghiep` int(11) NOT NULL
+  `chiKNdoanhnghiep` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -562,9 +562,10 @@ CREATE TABLE `bang48` (
 --
 
 CREATE TABLE `bangmoi` (
-  `Tieuchi` char(100) DEFAULT NULL,
-  `Năm2022` char(4) DEFAULT NULL,
-  `Năm2023` char(4) DEFAULT NULL
+  `thanhtich` char(100) DEFAULT NULL,
+  `Nam2022` char(4) DEFAULT NULL,
+  `Nam2023` char(4) DEFAULT NULL,
+  `Nam2024` char(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -575,11 +576,11 @@ CREATE TABLE `bangmoi` (
 
 CREATE TABLE `excel24` (
   `Tieuchi` varchar(1000) DEFAULT NULL,
-  `Năm2021` float DEFAULT NULL,
   `Năm2022` float DEFAULT NULL,
   `Năm2023` float DEFAULT NULL,
-  `Năm2024` float DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `Năm2024` float DEFAULT NULL,
+  `Năm2025` float DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 

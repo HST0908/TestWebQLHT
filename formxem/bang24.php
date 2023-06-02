@@ -67,17 +67,17 @@
                                             $sql = "select tieuchi,";
                                             $i = $nambd;
                                             while ($i < $namkt) {
-                                                $sql = $sql . " sum(if(namhoc=$i,round(giatri,3),0)) as 'năm $i',";
+                                                $sql = $sql . " sum(if(namhoc=$i,round(giatri,0),0)) as 'năm $i',";
                                                 $i++;
                                             }
-                                            $sql = $sql . " sum(if(namhoc=$i,round(giatri,3),0))as 'năm $i'";
+                                            $sql = $sql . " sum(if(namhoc=$i,round(giatri,0),0))as 'năm $i'";
                                             $sql = $sql . " FROM bang24 where namhoc between $nambd and $namkt GROUP BY tieuchi desc";
 
                                             echo "<tr class='bangxem--title'>";
                                             echo "<td><strong> Đơn vị </strong></td>";
                                             $j = $nambd;
                                             while ($j <= $namkt) {
-                                                echo " <td><strong> Năm $j </strong></td>";
+                                                echo " <td align = center><strong> Năm $j </strong></td>";
 
                                                 $j++;
                                              }
@@ -128,17 +128,17 @@
                                             $sql = "select tieuchi,";
                                             $i = $nambd;
                                             while ($i < $namkt) {
-                                                $sql = $sql . " sum(if(namhoc=$i,round(giatri,3),0)) as 'năm $i',";
+                                                $sql = $sql . " sum(if(namhoc=$i,round(giatri,0),0)) as 'năm $i',";
                                                 $i++;
                                             }
-                                            $sql = $sql . " sum(if(namhoc=$i,round(giatri,3),0))as 'năm $i'";
+                                            $sql = $sql . " sum(if(namhoc=$i,round(giatri,0),0))as 'năm $i'";
                                             $sql = $sql . " FROM bang24 where namhoc between $nambd and $namkt GROUP BY tieuchi desc";
 
                                             echo "<tr class='bangxem--title'>";
                                             echo "<td><strong> Đơn vị </strong></td>";
                                             $j = $nambd;
                                             while ($j <= $namkt) {
-                                                echo " <td><strong> Năm $j </strong></td>";
+                                                echo " <td align = center><strong> Năm $j </strong></td>";
 
                                                 $j++;
                                             }

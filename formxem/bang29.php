@@ -64,7 +64,7 @@
                                             echo '<td>'.$row['doanhthu'].'</td>';
                                             echo '<td>'.$row['tiledoanhthu'].'</td>';
                                             echo '<td>'.$row['tisodoanhthu'].'</td>';
-                                            echo '<td><label class="btnsua"><a href="../formsua/suabang29.php?id='.$row['id'].'">
+                                            echo '<td><label class="btnsua"><a href="../formsua/suabang29.php?nam='.$row['nam'].'">
                                             <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                 <lord-icon
                                                     src="https://cdn.lordicon.com/nnbhwnej.json"

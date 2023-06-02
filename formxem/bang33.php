@@ -93,7 +93,7 @@
                                                 echo '<td>'.$row['loaitapchi'].'</td>';
                                                 echo '<td>'.$row['soluong'].'</td>';
                                                 echo '<td>'.$row['nam'].'</td>';
-                                                echo '<td><label class="btnsua"><a href="../formsua/suabang33.php?id='.$row['id'].'">
+                                                echo '<td><label class="btnsua"><a href="../formsua/suabang33.php?nam='.$row['nam'].'">
                                                 <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                     <lord-icon
                                                         src="https://cdn.lordicon.com/nnbhwnej.json"

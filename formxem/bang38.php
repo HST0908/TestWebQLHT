@@ -92,7 +92,7 @@
                                                 echo '<td>'.$row['thanhtich'].'</td>';
                                                 echo '<td align=center>'.$row['soluong'].'</td>';
                                                 echo '<td align=center>'.$row['nam'].'</td>';
-                                                echo '<td align=center><label class="btnsua"><a href="../formsua/suabang38.php?id='.$row['id'].'">
+                                                echo '<td align=center><label class="btnsua"><a href="../formsua/suabang38.php?nam='.$row['nam'].'">
                                                 <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                     <lord-icon
                                                         src="https://cdn.lordicon.com/nnbhwnej.json"

@@ -129,7 +129,7 @@
                                                 echo '<td align=center>'.$row['giatri'].'</td>';
                                                 echo '<td align=center>'.$row['namhoc'].'</td>';
                                                 if($user['role'] == 1){
-                                                echo '<td align=center><label class="btnsua"><a href="../formsua/suabang23.php?id='.$row['id'].'">
+                                                echo '<td align=center><label class="btnsua"><a href="../formsua/suabang23.php?namhoc='.$row['namhoc'].'">
                                                 <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                     <lord-icon
                                                         src="https://cdn.lordicon.com/nnbhwnej.json"

@@ -141,7 +141,7 @@
                                                 echo '<td>'.$tieuchi.'</td>';
                                                 echo '<td align=center>'.$row['soluong'].'</td>';
                                                 echo '<td align=center>'.$row['namhoc'].'</td>';
-                                                echo '<td align=center><label class="btnsua"><a href="../formsua/suabang25.php?id='.$row['id'].'">
+                                                echo '<td align=center><label class="btnsua"><a href="../formsua/suabang25.php?namhoc='.$row['namhoc'].'">
                                                 <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                                                     <lord-icon
                                                         src="https://cdn.lordicon.com/nnbhwnej.json"
